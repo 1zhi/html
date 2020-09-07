@@ -1,0 +1,48 @@
+.timelines {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.timelines .title {
+    line-height: 1.58;
+}
+
+.timelines span.summary {
+    margin-right: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.timelines .timeline {
+    background: #eeeeee;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.7);
+}
+
+
+.timelines .timeline.current_timeline {
+    color: #ffffff;
+    text-shadow: 1px 0 0 #888;
+    background: #6e5cc1;
+}
+.timelines .timeline.current_timeline span.summary {
+    color: #ffffff;
+}
+.timelines {
+    position: relative;
+    display: block;
+}
+
+.timelines .right_timeline {
+    float: right;
+    clear: right;
+
+}
+
+
+.timelines .left_timeline {
+    float: left;
+    clear: left;
+}
