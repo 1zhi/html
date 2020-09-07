@@ -75,3 +75,44 @@ This is a paragraph
 ```
 /* css的注释内容 */
 ```
+
+## css 中的基本概念有哪些，并用实际的代码举例说明？
+
+规则、选择器、声明（包含属性和值）
+
+**CSS 规则**由两个主要的部分构成：选择器，以及一条或多条声明。
+
+**选择器**通常是您需要改变样式的 HTML 元素。
+
+每条**声明**由一个属性和一个值组成。
+
+属性（property）是您希望设置的样式属性（style attribute），每个属性有一个值。属性和值被冒号分开。
+
+```
+selector {property: value}
+```
+
+以下代码举例
+```
+h1 {color:red; font-size:14px;}
+```
+![](./_image/2020-09-07/2020-09-07-16-15-53.jpg)
+
+
+## css 中的伪元素是什么，常用的伪元素有哪些？
+
+英文为：Pseudo-elements
+
+CSS 伪元素用于向某些选择器设置特殊效果。
+
+常用的伪元素有：
+:first-line
+:first-letter
+:before
+:after
+
+
+
+## 说明
+
+卡片的内容大部分来自自己的理解，图片一般来自互联网的搜索，一些概念和定义来自[w3school](https://www.w3school.com.cn/css/css_syntax.asp)，均为非商业引用。
