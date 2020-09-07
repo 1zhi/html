@@ -49,3 +49,6 @@ font-smooth CSS 属性用来控制字体渲染时的平滑效果。
 
 
 
+## css 中 position 的relative 和 absolute 还有 sticky 如何理解？
+
+## css 中的文档流指的是什么？

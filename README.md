@@ -10,6 +10,11 @@
 
 * 常用的知识点制作成anki卡片，实践和记住即可
 
+## 工具上手
+
+* vscode
+* 插件： Live Server，用于实时查看html的渲染效果
+
 ## ChangeLog
 
 2020-09-07 Init
