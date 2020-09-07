@@ -41,3 +41,11 @@
 
 ## css 中的颜色的合法值有哪些？
 [CSS 合法颜色值](https://www.w3school.com.cn/cssref/css_colors_legal.asp)
+
+## css 中 webkit-font-smoothing 是什么意思？
+[字体平滑 - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-smooth)
+
+font-smooth CSS 属性用来控制字体渲染时的平滑效果。
+
+
+
