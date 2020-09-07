@@ -1,6 +1,6 @@
 # 该文档存放已经置于anki的知识点
 
-## Q: 用图示解释盒子模型（The Box Model）
+## 图示解释盒子模型（The Box Model）
 涉及到的几个关键术语为：
 margin
 background-color
@@ -16,7 +16,7 @@ content
 Cascading Style Sheets
 层叠样式表
 
-## html 的中英文全称是什么？
+## Html 的中英文全称是什么？
 HyperText Marked Language
 超文本标记语言
 
