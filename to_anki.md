@@ -57,6 +57,16 @@ W3C规范中没有document flow这个概念，只有normal-flow, 文档流的叫
 所以可以叫文档流、布局流、普通流，都是一回事
 
 
+## css 中文档流和定位的关系？
+
+[CSS普通流（文档流） | 前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/html-and-css-basic/css-normal-flow.html)
+[正常布局流 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Normal_Flow)
+[定位 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/%E5%AE%9A%E4%BD%8D)
+
+
+## 文档流的默认顺序修改
+[writing-mode - CSS: Cascading Style Sheets | MDN](https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)
+
 
 
 
