@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.timelines {
+    position: relative;
+    display: block;
+}
+
 .timelines .title {
     line-height: 1.58;
 }
@@ -22,6 +27,7 @@
 }
 
 
+
 .timelines .timeline.current_timeline {
     color: #ffffff;
     text-shadow: 1px 0 0 #888;
@@ -30,10 +36,7 @@
 .timelines .timeline.current_timeline span.summary {
     color: #ffffff;
 }
-.timelines {
-    position: relative;
-    display: block;
-}
+
 
 .timelines .right_timeline {
     float: right;
