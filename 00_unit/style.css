@@ -1,0 +1,84 @@
+
+
+.head{
+    background-color: yellow;
+}
+
+.trangle_training{
+    margin: 10px;
+}
+
+#triangle-01{
+    /* solid 的作用是？ */
+    width: 20px;
+    height: 20px;
+    border-top: 50px solid blue;
+    border-right: 50px solid red;
+    border-bottom: 50px solid green;
+    border-left: 50px solid yellow;
+    content: "test"
+}
+
+#triangle00{
+    /* solid 的作用是？ */
+    border-top: 50px  blue;
+    border-right: 50px solid red;
+    border-bottom: 50px solid green;
+    border-left: 50px solid yellow;
+    content: "test"
+}
+
+#triangle01{
+    /* solid 的作用是？ */
+    border-top: 50px solid blue;
+    border-right: 50px solid red;
+    border-bottom: 50px solid green;
+    border-left: 50px solid yellow;
+}
+
+#triangle02{
+    width: 0;
+    height: 0;
+    border-top: 50px solid blue;
+    border-right: 50px solid red;
+    border-bottom: 50px solid green;
+    border-left: 50px solid yellow;
+}
+
+#triangle03{
+    width: 0;
+    height: 0;
+    border-top: 50px blue solid transparent;
+    border-right: 50px solid red;
+    border-bottom: 50px solid green;
+    border-left: 50px solid yellow;
+}
+
+#triangle04{
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid red;
+    border-bottom: 50px solid green;
+    border-left: 50px solid yellow;
+}
+
+#triangle05{
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid red transparent;
+    border-bottom: 50px solid green;
+    border-left: 50px solid yellow;
+}
+
+#triangle06{
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid red;
+    border-bottom: 50px solid green transparent;
+    border-left: 50px solid yellow transparent;
+}
+
+/* border 属性的solid值的含义？ */
