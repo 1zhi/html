@@ -6,7 +6,27 @@
 
 .trangle_training{
     margin: 10px;
+
 }
+
+/* .normal_border{
+    /* 为什么无效？因为用错地方了 */
+    /* display:inline; */
+    /* float: left
+    float: right */
+    /* 为啥这里又可以生效了？ */
+    /* display-inside: inline-block; */
+    /* display: inline-block; */
+
+
+.trangle_training{
+    /* 这个元素要如何用好？ */
+    display: inline-block;
+}
+
+
+
+
 
 #triangle-01{
     /* solid 的作用是？ */
@@ -16,7 +36,8 @@
     border-right: 50px solid red;
     border-bottom: 50px solid green;
     border-left: 50px solid yellow;
-    content: "test"
+    content: "test";
+    /* display:inline; */
 }
 
 #triangle00{
@@ -75,10 +96,44 @@
 #triangle06{
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
+    border-top: 50px solid grey transparent;
     border-right: 50px solid red;
     border-bottom: 50px solid green transparent;
     border-left: 50px solid yellow transparent;
 }
 
 /* border 属性的solid值的含义？ */
+
+
+#triangle07{
+    /* solid 的作用是？ */
+    width: 100px;
+    height: 20px;
+    border-top: 10px solid blue;
+    border-right: 100px solid red;
+    border-bottom: 25px solid green;
+    border-left: 50px solid yellow;
+    content: "test"
+}
+
+#triangle08{
+    /* solid 的作用是？ */
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid blue;
+    border-right: 100px solid red;
+    border-bottom: 25px solid green;
+    border-left: 50px solid yellow;
+    content: "test"
+}
+
+#triangle09{
+    /* solid 的作用是？ */
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid blue transparent;
+    border-right: 50px solid red transparent;
+    border-bottom: 50px solid green;
+    border-left: 50px solid yellow;
+    content: "test"
+}
