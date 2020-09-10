@@ -1,0 +1,29 @@
+/* 为什么不生效 */
+.pages{
+    border: 10px black;
+
+}
+
+/* 选择器不用加.，因为a是属性，不是类 */
+a:link{
+    background-color: yellow;
+    font-size: 20px;
+    /* 为什么不生效 */
+    border: 10px black;
+}
+
+
+a:visited {
+    color:#00FF00;
+    border: 10px black;
+
+}
+
+.ref::before {
+    font-weight: bold;
+    color: navy;
+    content: "Reference ";
+    /* 为什么不生效 */
+    border: 10px black;
+
+  }
