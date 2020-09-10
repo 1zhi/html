@@ -116,3 +116,47 @@ float 是脱离文档流的
 ## w3c是什么
 
 ## 如何利用css做三角形还有其他图形？
+有相关的文字，还可以继续参考
+https://segmentfault.com/a/1190000005715074
+
+## css 增加 content，如何回写html内容？
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/Generated_content
+
+
+
+
+
+## html中怎么使用css在图片上添加文字？
+https://m.html.cn/qa/css3/13117.html
+
+
+
+
+## border属性的solid值的含义
+https://www.runoob.com/css/css-border.html
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/border
+solid: 实线边框
+dashed：虚线边框
+dotted：点线边框
+double
+none hidden
+
+## html 中如何实现代码高亮？
+
+## 如何实现多个div的内容在同一行显示？
+float
+display
+https://blog.csdn.net/u010615629/article/details/53886774
+https://blog.csdn.net/aitangyong/article/details/42775803
+https://blog.csdn.net/hantiannan/article/details/7428566
+https://www.html.cn/qa/css3/14035.html
+position
+
+## display:inline、display:block、display:inline-block
+https://blog.csdn.net/sinat_34719507/article/details/53512509
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/display
+
+## html 超链接 a
+https://www.runoob.com/html/html-links.html
+https://www.w3schools.com/cssref/sel_link.asp
+https://www.w3school.com.cn/css/css_link.asp
