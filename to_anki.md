@@ -8,17 +8,33 @@
 
 ## css 的选择器中的属性有哪些筛选方法？
 
-## css 中.cover.links 和 .cover .links 一个有空格一个没空格，主要区别是什么？
 
-## css的浮动框
+## css的float 和 clear属性如何理解和使用？
 float
 [CSS 浮动](https://www.w3school.com.cn/css/css_positioning_floating.asp)
+[float - CSS | MDN](https://developer.mozilla.org/zh-CN/docs/CSS/float)
+当一个元素浮动之后，它会被移出正常的文档流，然后向左或者向右平移，一直平移直到碰到了所处的容器的边框，或者碰到另外一个浮动的元素。
 
+clear
+[clear - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/clear)
+
+这两个属性暂时不放入anki，还需要再实践和理解一下
 
 ## css中的伪类是什么改变？
 [CSS 伪类](https://www.w3school.com.cn/css/css_pseudo_classes.asp)
 
 ## 伪类和伪元素是什么关系？
+伪元素英文：Pseudo-elements
+
+伪类：Pseudo-classes，添加到选择器的关键字，指定要选择的元素的特殊状态。
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-classes
+
+
+CSS3 引入 ::before  是为了将伪类和伪元素区别开来。浏览器也接受由CSS 2 引入的 :before 写法。
+基于CSS2的语法，伪元素和伪类都可以用一个冒号，如果基于CSS3的规则，伪元素应该用两个冒号，伪类为一个冒号
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/::before
+常用的在CSS2中的伪元素就四个 befor after first-line first-letter，剩下的伪元素都是CSS3中定义的，必须用两个冒号区分，不过我目前还没怎么用到，以后再说
+
 
 ## css 中的颜色的合法值有哪些？
 [CSS 合法颜色值](https://www.w3school.com.cn/cssref/css_colors_legal.asp)
@@ -142,23 +158,7 @@ https://www.runoob.com/html/html-links.html
 https://www.w3schools.com/cssref/sel_link.asp
 https://www.w3school.com.cn/css/css_link.asp
 
-## html 中 css 没出现效果的原因是什么，如何排查？
 
-* 有可能是使用了代理，导致本地环境无法在浏览器中更新效果，解决办法：关闭代理。
-* html中调用css的文件名写错了，link中格式错误（有逗号、属性写错等等）。解决办法：检查文件名、引用的语法等。
-* 有可能是正常的效果就是没有效果的，自己搞错了。解决办法：要确认css生效了，可以加入如下的代码段，核心是让css的方式回写html文字的方式直接的看到效果。
-
-```html
-<span class='ref'>Something<span>
-```
-
-```css
-.ref:before{
-    content: "Reference";
-    color: navy;
-    font-weight: bold;
-}
-```
 
 
 ## 外边距重叠的情况如何处理？
@@ -215,3 +215,23 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Selectors
 http://www.ruanyifeng.com/blog/2009/03/css_selectors.html
 https://www.runoob.com/cssref/css-selectors.html
 https://www.w3school.com.cn/cssref/css_selectors.asp
+
+
+
+
+## 如何利用css伪元素画线段，同时不用改变html？
+在我输出的总结中有相关的内容
+
+## vscode中如何增加代码片段
+
+## css 中的box-sizing 属性如何理解？
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing
+要和框盒模型结合起来理解
+
+
+## 框盒模型的进一步介绍
+涉及到 content-area padding-area border-area margin-area
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model
+
+## display 如何理解？
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/display

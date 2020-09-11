@@ -1,8 +1,11 @@
 body {
+    /* 这里修改了为什么不生效？ 2020-09-11 */
     padding: 0;
     margin: 0;
     font-family: "droid-sans", "stheiti", 'hei', 'Hiragino Sans GB', "microsoft yahei", sans-serif;
     font-size: 20px;
+    background-color: gray;
+
 }
 
 .cover{
@@ -11,22 +14,17 @@ background: url('images/image.jpg');
 position: absolute;
 top: 0;
 left: 0;
-width: 100%;
-height: 100%;
+width: 80%;
+height: 80%;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-background-color: gray; /*这里是不是就不生效了？放在不同位置的效果是有差异的*/
-}
-
-.body{ /* body 和 .body是什么区别*/
-background-color: gray;
 }
 
 .cover h1{
 text-align:left;
-margin:  72px 72px;
-
+margin:  72px 72px 0px 72px;
+border: 1px dotted white;
 }
 
 .cover .links a{
@@ -34,9 +32,10 @@ text-decoration: none;
 letter-spacing: 1px;
 font-size: 16px;
 padding: 10px 25px;
+/* 效果是什么？ */
 display: inline-block;
 margin: 15px 72px;
- border: 1px solid rgba(255, 255, 255, 0.35);
+border: 1px solid rgba(255, 255, 255, 0.35);
 border-radius: 3px;
  color: #ffffff;
 

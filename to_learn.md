@@ -24,3 +24,5 @@ https://www.zhihu.com/question/31317160/answer/85833065
 * 利用 html&css 做一些简单的电子书的页面，记录学习过程，顺便实践
 
 * css1-3 html5 移动端的适配等内容
+
+* 参考[QuanDuan](https://www.quanduan.com/)做一个静态页面，托管到github

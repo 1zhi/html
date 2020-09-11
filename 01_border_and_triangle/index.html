@@ -102,6 +102,53 @@
   
             <h2>透明四个边</h2>
 
+            <h2>画几个圆？</h2>
+
+            <div class='unit'>
+                <span>有边框的实心圆</span>
+                <div class='round' id='round01'></div>
+                <span>只要关键信息设置到位，画圆还是很简单的</span>
+                <code>
+                    #round01{
+                        width: 100px;
+                        height: 100px;
+                        background-color:red;
+                        border: 5px solid black;
+                        border-radius: 100px;
+                    }
+                </code>
+            </div>
+
+            <div class='unit'>
+                <span>无边框的实心圆</span>
+                <div class='round' id='round02'></div>
+                <span>去掉边框</span>
+                <code>
+                    #round02{
+                        width: 100px;
+                        height: 100px;
+                        background-color:red;
+                        border-radius: 100px;
+                        border: 5px solid transparent;
+                    }
+                </code>
+            </div>
+
+            <div class='unit'>
+                <span>空心圆</span>
+                <div class='round' id='round03'></div>
+                <span>边框为圆，里面为空</span>
+                <code>
+                    #round03{
+                        width: 50px;
+                        height: 50px;
+                        background-color: transparent;
+                        border-radius: 50px;
+                        border: 25px solid red;
+                    }
+                </code>
+            </div>
+
             <h2>我的疑问</h2>
         </div>
     </body>

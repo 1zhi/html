@@ -8,9 +8,20 @@ body{
 .cover{
     color: white;
     background: url('images/image.jpg');
-    position: absolute; /*位置如何理解*/
+    /*位置如何理解*/
+    position: absolute; 
+    /* 和上面的position会有互相影响 */
+    /* 下面四个声明要一起看一起用，还需要仔细理解 */
+    width: 100%;
+    height: 100%; 
+    background-position: center;
+    background-size: contain;
 }
 
 .div{
     margin: 20px;
+}
+
+h1{
+    border: 1px solid black;
 }

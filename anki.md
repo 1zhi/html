@@ -147,6 +147,27 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding
 }
 ```
 
+## 如何利用border画圆形？
+设置border包含内容 的长和宽、border的线宽、border的圆角，
+可以画实心圆、空心圆等各种，举例如下：
+```
+#round03{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 25px solid red;
+}
+```
+
+## css的选择器中 中.cover.links 和 .cover .links 一个有空格一个没空格，主要区别是什么？
+
+有空格的指的是.cover元素下的.links后代元素。这里的空格是后代元素选择的语法
+没有空格是匹配多个class，html的class属性可以同时存在多个值，中间用空格隔开即可
+
+
+
+
 ## 说明
 
 卡片的内容大部分来自自己的理解，图片一般来自互联网的搜索，一些概念和定义来自[w3school](https://www.w3school.com.cn/css/css_syntax.asp)，均为非商业引用。

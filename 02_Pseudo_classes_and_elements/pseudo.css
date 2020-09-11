@@ -1,0 +1,23 @@
+
+
+#example01::before{
+    content: "你好";
+    color: red;
+    width: 2px;
+}
+
+
+#example02::before{
+    content: "";
+    width: 2px;
+    position: absolute;
+    /* display: block; */
+    height: 5%;
+    background: red;
+    left: 40%;
+}
+
+.unit {
+    border: 1px dashed;
+    margin-top: 5px;
+}

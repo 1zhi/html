@@ -1,0 +1,47 @@
+
+
+
+#a {
+    /* float: left; */
+
+    background: #6e5cc1;
+    /* padding: 50px; */
+    margin-top: 0;
+    width: 55%;
+    /* height: 15%; */
+    border: 1px solid black;
+}
+
+#b {
+    /* float: right */
+    /* clear: left; */
+    float: left;
+    /* clear: left; */
+    
+    background: #eeeeee;
+    padding: 30px;
+    margin-top: 30px;
+    width: 20%;
+    border: 1px solid black;
+}
+
+#c {
+    float: right;
+    /* clear: right; */
+    background: yellowgreen;
+    padding: 20px;
+    margin-top: 10px;
+    width: 60%;
+    border: 1px solid black;
+}
+
+#d {
+    float: right;
+    /* clear: right; */
+    /* clear: left; */
+    background: yellow;
+    padding: 10px;
+    margin-top: 30px;
+    width: 40%;
+    border: 1px solid black;
+}

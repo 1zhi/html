@@ -10,6 +10,12 @@
 }
 
 
+span,h2{
+    /* clear: left; */
+    display: inline-block;
+}
+
+
 
 .trangle_training{
     /* 这个元素要如何用好？ */
@@ -17,9 +23,12 @@
 }
 
 .unit{
-    border: 1px solid black;
+    border: 1px dashed black;
     margin: 5px;
     padding: 10px;
+    width: 20%;
+    float: left;
+    /* clear: left; */
 }
 
 .normal_border{
@@ -150,3 +159,28 @@
     border: 50px solid transparent;
     border-left: 100px solid yellow;
 }
+
+#round01{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    border: 5px solid black;
+    border-radius: 100px;
+}
+
+#round02{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    border-radius: 100px;
+    border: 5px solid transparent;
+}
+
+#round03{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 25px solid red;
+}
+
