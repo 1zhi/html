@@ -235,3 +235,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_t
 
 ## display 如何理解？
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/display
+
+## html中的属性、元素指的是什么？
+
+## html中title是属性还是元素？
