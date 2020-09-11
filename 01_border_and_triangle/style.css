@@ -9,14 +9,6 @@
 
 }
 
-/* .normal_border{
-    /* 为什么无效？因为用错地方了 */
-    /* display:inline; */
-    /* float: left
-    float: right */
-    /* 为啥这里又可以生效了？ */
-    /* display-inside: inline-block; */
-    /* display: inline-block; */
 
 
 .trangle_training{
@@ -24,12 +16,23 @@
     display: inline-block;
 }
 
+.unit{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+}
 
+.normal_border{
+    /* 为什么inline无效，inline-block有效？ */
+    display:inline-block;
+    /* float: left
+    float: right */
 
-
+    /* 为啥这里又可以生效了？ */
+    /* display-inside: inline-block; */
+}
 
 #triangle-01{
-    /* solid 的作用是？ */
     width: 20px;
     height: 20px;
     border-top: 50px solid blue;
@@ -136,4 +139,14 @@
     border-bottom: 50px solid green;
     border-left: 50px solid yellow;
     content: "test"
+}
+
+#triangle10{
+    width: 0px;
+    height: 0px;
+    /* border-top: 50px solid blue transparent;
+    border-right: 50px solid red transparent;
+    border-bottom: 50px solid green transparent; */
+    border: 50px solid transparent;
+    border-left: 100px solid yellow;
 }

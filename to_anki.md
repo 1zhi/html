@@ -10,26 +10,6 @@
 
 ## css 中.cover.links 和 .cover .links 一个有空格一个没空格，主要区别是什么？
 
-
-
-## css 中常用的几种选择器是什么？（还需要进一步理解）
-
-[CSS 元素选择器](https://www.w3school.com.cn/css/css_selector_type.asp)又称为**类型选择器**
-
-[CSS id 选择器](https://www.w3school.com.cn/css/css_syntax_id_selector.asp)
-
-#开头
-
-[CSS 类选择器](https://www.w3school.com.cn/css/css_syntax_class_selector.asp)
-
-.开头
-
-[CSS 属性选择器](https://www.w3school.com.cn/css/css_syntax_attribute_selector.asp)
-[]包裹
-
-[CSS 派生选择器](https://www.w3school.com.cn/css/css_syntax_descendant_selector.asp)
-没太理解
-
 ## css的浮动框
 float
 [CSS 浮动](https://www.w3school.com.cn/css/css_positioning_floating.asp)
@@ -119,6 +99,7 @@ float 是脱离文档流的
 有相关的文字，还可以继续参考
 https://segmentfault.com/a/1190000005715074
 
+
 ## css 增加 content，如何回写html内容？
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/Generated_content
 
@@ -160,3 +141,77 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/display
 https://www.runoob.com/html/html-links.html
 https://www.w3schools.com/cssref/sel_link.asp
 https://www.w3school.com.cn/css/css_link.asp
+
+## html 中 css 没出现效果的原因是什么，如何排查？
+
+* 有可能是使用了代理，导致本地环境无法在浏览器中更新效果，解决办法：关闭代理。
+* html中调用css的文件名写错了，link中格式错误（有逗号、属性写错等等）。解决办法：检查文件名、引用的语法等。
+* 有可能是正常的效果就是没有效果的，自己搞错了。解决办法：要确认css生效了，可以加入如下的代码段，核心是让css的方式回写html文字的方式直接的看到效果。
+
+```html
+<span class='ref'>Something<span>
+```
+
+```css
+.ref:before{
+    content: "Reference";
+    color: navy;
+    font-weight: bold;
+}
+```
+
+
+## 外边距重叠的情况如何处理？
+暂时还没时间精力研究，先放着
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
+
+
+
+## css 中常用的几种选择器是什么？（还需要进一步理解）
+
+基本选择器
+
+类选择器：在css中以.开头，后面的内容匹配html中`class=''`中的内容
+
+id选择器：在css中以#开头，后面的内容匹配html中`id=''`中的内容
+
+属性选择器：在css中被[]包裹的内容
+
+元素选择器（又称为**类型选择器**）：
+
+通用选择器：*
+
+
+
+分组选择器（Grouping selectors）
+
+选择器列表：中间用逗号分隔，是或的关系
+
+
+组合器（Combinators）
+
+后代组合器（Descendant combinator）：空格分隔
+
+
+直接子代组合器（Child combinator）：> 分隔
+
+一般兄弟组合器（General sibling combinator）
+
+紧邻兄弟组合器（Adjacent sibling combinator）：+分隔
+
+列组合器（Column combinator）
+
+
+伪选择器（Pseudo）
+
+伪类
+
+伪元素
+
+注意说明：css1、css2、css3中的内容是有区分的，了解后需要在一些特殊场景下区分使用
+
+参考页面：
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Selectors
+http://www.ruanyifeng.com/blog/2009/03/css_selectors.html
+https://www.runoob.com/cssref/css-selectors.html
+https://www.w3school.com.cn/cssref/css_selectors.asp

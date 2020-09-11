@@ -112,6 +112,40 @@ CSS 伪元素用于向某些选择器设置特殊效果。
 :after
 
 
+## margin 和 padding的属性值有哪些，这两个元素的使用有什么注意事项？
+
+margin 的值可以是1个到4个值，可以是长度、百分比、自动，语法格式如下：
+`[ <length> | <percentage> | auto ]{1,4}`
+
+其中长度包括和绝对长度和相对长度，比例是百分比。
+如果是1个值是对四边有效，两个值是上下和左右，三个值是上、下、左右，四个值对应上右下左顺时针方向
+
+另外要注意：margin对内联元素的上下会失效，padding不会
+
+其他的知识点如果需要更新，参考如下的链接
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/length
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/percentage
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding
+
+
+## html 中 css 没出现效果的原因是什么，如何排查？
+
+* 有可能是使用了代理，导致本地环境无法在浏览器中更新效果，解决办法：关闭代理。
+* html中调用css的文件名写错了，link中格式错误（有逗号、属性写错等等）。解决办法：检查文件名、引用的语法等。
+* 有可能是正常的效果就是没有效果的，自己搞错了。解决办法：要确认css生效了，可以加入如下的代码段，核心是让css的方式回写html文字的方式直接的看到效果。
+
+```html
+<span class='ref'>Something<span>
+```
+
+```css
+.ref:before{
+    content: "Reference";
+    color: navy;
+    font-weight: bold;
+}
+```
 
 ## 说明
 

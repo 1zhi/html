@@ -18,40 +18,87 @@
         <div id='triangle_part'>
             <h2>正常的border展示</h2>
             <div class="normal_border">
-                <span>No. -01</span>
-                <div class='trangle_training'id='triangle-01'></div>
-                <span>No. 07</span>
-                <div class='trangle_training'id='triangle07'></div>
+
+                <div class='unit'>
+                    <span>No. -01</span>
+                    <div class='trangle_training'id='triangle-01'></div>
+                </div>
+
+                <div class='unit'>
+                    <span>No. 07</span>
+                    <div class='trangle_training'id='triangle07'></div>
+                </div>
             </div>
 
 
             <h2>无内容，border四边变换</h2>
             <div class="four_border_element">
-                <span>No. 01</span>
-                <div class='trangle_training'id='triangle01'></div>
-                <span>No. 02</span>
-                <div class='trangle_training'id='triangle02'></div>
-                <span>No. 04</span>
-                <div class='trangle_training'id='triangle04'></div>
-                <span>No. 08</span>
-                <div class='trangle_training'id='triangle08'></div>
+                <div class='unit'>
+                    <span>No. 01</span>
+                    <div class='trangle_training'id='triangle01'></div>
+                </div>
+
+                <div class='unit'>
+                    <span>No. 02</span>
+                    <div class='trangle_training'id='triangle02'></div>
+                </div>
+
+                <div class='unit'>
+                    <span>No. 04</span>
+                    <div class='trangle_training'id='triangle04'></div>
+                </div>
+
+                <div class='unit'>
+                    <span>No. 08</span>
+                    <div class='trangle_training'id='triangle08'></div>
+                </div>
             </div>
 
             <h2>透明一个边</h2>
-            <span>No. 00</span>
-                <div class='trangle_training'id='triangle00'></div>
-            <span>No. 03</span>
-            <div class='trangle_training'id='triangle03'></div>
-            
+
+            <div class='unit'>
+                <span>No. 00</span>
+                    <div class='trangle_training'id='triangle00'></div>
+                </div>
+
+            <div class='unit'>
+                <span>No. 03</span>
+                <div class='trangle_training'id='triangle03'></div>
+            </div>
+
             <h2>透明两个边</h2>
-            <span>No. 05</span>
-            <div class='trangle_training'id='triangle05'></div>
-            <span>No. 06</span>
-            <div class='trangle_training'id='triangle06'></div>
-            <span>No. 09</span>
-            <div class='trangle_training'id='triangle09'></div>
+
+            <div class='unit'>
+                <span>No. 05</span>
+                <div class='trangle_training'id='triangle05'></div>
+            </div>
+
+            <div class='unit'>
+                <span>No. 06</span>
+                <div class='trangle_training'id='triangle06'></div>
+            </div>
+
+            <div class='unit'>
+                <span>No. 09</span>
+                <div class='trangle_training'id='triangle09'></div>
+            </div>
 
             <h2>透明三个边（正常的三角形）</h2>
+
+            <div class='unit'>
+                <span>No. 10</span>
+                <div class='trangle_training'id='triangle10'></div>
+                <span>如果画等腰三角形，规律性的画法是设置`border`后，对某一条边单独设置</span>
+                <code>#triangle10{
+                    width: 0px;
+                    height: 0px;
+                    /* border-top: 50px solid blue transparent;
+                    border-right: 50px solid red transparent;
+                    border-bottom: 50px solid green transparent; */
+                    border: 50px solid transparent;
+                    border-left: 100px solid yellow;
+                }</code>
+            </div>
   
             <h2>透明四个边</h2>
 
