@@ -71,7 +71,8 @@ body {
 }
 
 
-/* 两个点变四个点？ */
+/* 两个点变四个点？ 
+first-child 选定了第一个元素的上边的margin为零，自然导致了位移*/
 .timelines .timeline:first-child {
     margin-top: 0;
 }
