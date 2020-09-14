@@ -76,21 +76,22 @@ W3C规范中没有document flow这个概念，只有normal-flow, 文档流的叫
 
 Mac下最快是 Cmd + `/` 可以增加行注释
 
-## css 中 position 的relative 和 absolute 还有 sticky 如何理解？
+## css 中 position 属性对应哪些值，应该如何理解？
 
-position 有 static relative absolute sticky fixed 等几种主要的值，并且还需要搭配其他的属性和值综合使用
+position 有 static relative absolute sticky fixed 五种主要的值，并且还需要搭配其他的属性和值综合使用
+
+static 默认值，在文档流中，且top, right, bottom, left 和 z-index 属性无效
+relative 不会移出文档流，以static时位置的左上角为圆点，进行便宜
+
+absolute 移出正常流，通过指定元素相对于最近的非 static 定位祖先元素的偏移，来确定元素位置
+fixed 移出正常流，通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的每页的固定位置。fixed 属性会创建新的层叠上下文。当元素祖先的 transform, perspective 或 filter 属性非 none 时，容器由视口改为该祖先。
+
+sticky 元素根据正常文档流进行定位，然后相对它的最近滚动祖先（nearest scrolling ancestor）和 containing block (最近块级祖先 nearest block-level ancestor)，包括table-related元素，基于top, right, bottom, 和 left的值进行偏移
+
 [position - CSS（层叠样式表） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/position)
 上述链接的例子有大概的理解，还未通透，可以拆分开一个一个属性值对应的了解
 
-其中的几个关键信息为：
-absolute 会将元素移出正常文档流，通过指定元素相对于最近的非 static 定位祖先元素的偏移，来确定元素位置
-fixed 元素会被移出正常文档流，通过指定元素相对于屏幕视口（viewport）的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的每页的固定位置。fixed 属性会创建新的层叠上下文。当元素祖先的 transform, perspective 或 filter 属性非 none 时，容器由视口改为该祖先。
-
-static 不会移出文档流，且top, right, bottom, left 和 z-index 属性无效
-relative 不会移出文档流
-sticky 元素根据正常文档流进行定位，然后相对它的最近滚动祖先（nearest scrolling ancestor）和 containing block (最近块级祖先 nearest block-level ancestor)，包括table-related元素，基于top, right, bottom, 和 left的值进行偏移
-
-
+https://stackoverflow.com/questions/24323615/css-relative-positioning-without-setting-parent-to-relative
 
 ## 什么是祖先元素?
 
@@ -149,9 +150,6 @@ https://blog.csdn.net/hantiannan/article/details/7428566
 https://www.html.cn/qa/css3/14035.html
 position
 
-## display:inline、display:block、display:inline-block
-https://blog.csdn.net/sinat_34719507/article/details/53512509
-https://developer.mozilla.org/zh-CN/docs/Web/CSS/display
 
 ## html 超链接 a
 https://www.runoob.com/html/html-links.html
@@ -236,6 +234,75 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_t
 ## display 如何理解？
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/display
 
+最常见的集中值 display:inline、display:block、display:inline-block
+https://blog.csdn.net/sinat_34719507/article/details/53512509
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/display
+
+
+display: table
+
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/display
+https://juejin.im/entry/6844903504817946637
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=table
+https://www.w3schools.com/cssref/pr_class_display.asp
+
+
 ## html中的属性、元素指的是什么？
 
 ## html中title是属性还是元素？
+
+## 如何理解left和right属性？
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/left
+https://www.w3schools.com/cssref/pr_pos_left.asp
+
+## position 和 display 如何配合使用？
+
+## background vs background-color vs color
+color 值得是文本的颜色
+background-color 是背景颜色
+background 可以组合多个background相关的属性放到一起，如下例：
+```
+background: #ffffff url("img_tree.png") no-repeat right top;
+```
+
+这里的right和top是什么意思？
+
+https://stackoverflow.com/questions/39033070/css-color-vs-background-color-vs-background
+
+https://stackoverflow.com/questions/10205464/what-is-the-difference-between-background-and-background-color
+
+## css中增加链接的语法是什么？
+
+background: url("smiley.gif") no-repeat fixed center;
+
+
+## css中的line-height的作用是什么？
+
+line-height简单理解是行高，实际的理解还需看下面的链接了解其中的细节
+
+https://segmentfault.com/a/1190000003038583
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/line-height
+https://www.w3schools.com/cssref/pr_dim_line-height.asp
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_line-height
+
+## 为什么「margin:auto」可以让块级元素水平居中？以及margin相关的理解
+
+https://www.zhihu.com/question/21644198
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin
+https://blog.csdn.net/dkmings/article/details/51661056
+
+
+
+## 如何让元素居中
+https://juejin.im/post/6844903693142196238
+https://github.com/ljianshu/Blog/issues/29
+https://juejin.im/post/6844903919144075278
+https://segmentfault.com/a/1190000014116655
+https://louiszhai.github.io/2016/03/12/css-center/
+
+## 什么是响应式布局和自适应布局
+
+https://juejin.im/post/6844903814332432397
+https://baike.baidu.com/item/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80
+http://caibaojian.com/356.html
+https://juejin.im/post/6844903779431612424

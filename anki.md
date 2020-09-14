@@ -165,7 +165,13 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding
 有空格的指的是.cover元素下的.links后代元素。这里的空格是后代元素选择的语法
 没有空格是匹配多个class，html的class属性可以同时存在多个值，中间用空格隔开即可
 
+## css中的box-sizing属性可以有哪些值，对应的区别是什么？
 
+box-sizing可以为 content-box 或者 border-box，默认为content-box。
+主要区别在于对元素的width和height的值的计算逻辑不同，基于框盒模型，content-box 以content area的长宽计算，padding和border的部分不计算在内。
+和border-box以content和padding和border的长宽总和计算width和height。
+
+参考链接：https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing
 
 
 ## 说明
