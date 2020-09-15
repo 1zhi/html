@@ -306,3 +306,33 @@ https://juejin.im/post/6844903814332432397
 https://baike.baidu.com/item/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80
 http://caibaojian.com/356.html
 https://juejin.im/post/6844903779431612424
+
+
+## div span p标签三者间的区别
+
+<p></p>是段落标签，也就块元素。
+
+<div></div>也是块元素.
+
+<span>是内联元素。
+块状元素：独占一行，width和height起作用
+内联元素：width和heigh不起作用，不占一行
+
+html标签分块元素和行内元素，div，p都是块元素，span是行内元素。
+div和span是没有意义的标签，而p是代表一段话，一排文字的意思。
+主要是这两方面。
+
+p为段落标记，<p></p>包含文本内容 span是行内元素 就是在行内定义一块区域。
+
+<p></p>段落标签
+
+<span></span>为文字设置单独样式
+
+假如要为某一个段落设置样式，我们使用嵌入式的时候，可以这样写<p style="color:blue">某一个段落</p>
+
+假如要为几个字设置样式时，我们使用嵌入式的时候，可以写成<span style="color:blue">某几个字</span>
+
+抛开css不说，就是现在不要设置文字的样式，只要你有段落就会用到<p></p>，如果不设置文字样式的话，用不到<span></span>
+
+p标签是块级元素，span元素是行内元素。内元素可以写在块级元素里面  比如<p><span>内容</span></p>
+
