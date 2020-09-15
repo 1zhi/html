@@ -82,16 +82,22 @@ body {
     margin-top: 6px;
 }
 
+/* 做啥用？用于展示三角形，为什么是这个效果？ */
 .timelines .title {
     position: relative;
-    display: block;
+    /* display: block; */
 }
 
 .timelines .title:before {
     content:"";
-    border-top: 6px dashed transparent;
-    border-bottom: 6px solid transparent;
+    border-top: 6px dashed red;
+    border-bottom: 6px solid black;
+    border-left: 6px solid yellow;
+    border-right: 6px solid yellow;
+    /* 位置为什么会变化，同时并没有其他的上下左右元素的调整 */
     position: absolute;
+    /* position: static; */
+    /* position: relative; */
 }
 
 .timelines .left_timeline {
