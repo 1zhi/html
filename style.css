@@ -6,6 +6,7 @@
 
 /* 选择器不用加.，因为a是属性，不是类 */
 a:link{
+    color: black
     background-color: yellow;
     font-size: 20px;
     /* 为什么不生效 */
@@ -15,7 +16,7 @@ a:link{
 }
 
 a:visited {
-    color:#00FF00;
+    color: grey;
     border: 10px black solid;
 
 }
@@ -24,7 +25,8 @@ a:visited {
     font-weight: bold;
     color: navy;
     content: "Reference";
-    /* 为什么不生效，内联元素 */
+    /* 为什么不生效，内联元素
+    为什么又生效了？*/
     border: 1px black solid;
 
   }
