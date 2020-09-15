@@ -11,142 +11,120 @@ body {
     height: 0;
 } */
 
-.timelines {
+/* .timelines {
     margin: 0 auto;
     padding: 0;
-}
+} */
 
-.timelines:before, .timelines:after {
+/* 这是什么，还没搞清楚 */
+/* .timelines:before, .timelines:after {
     display: table;
     content:"";
     line-height: 0;
-}
+} */
 
-.timelines:after {
+/* .timelines:after {
     clear: both;
-}
+} */
 
 .timelines .timeline {
     background: #eeeeee;
     padding: 20px;
     margin-top: 20px;
-    border-radius: 2px;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.7);
+    /* border-radius: 2px; */
+    /* text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.7); */
 }
 
-.timelines .timeline.current_timeline {
+/* .timelines .timeline.current_timeline {
     color: #ffffff;
     text-shadow: 1px 0 0 #888;
     background: #6e5cc1;
-}
+} */
 
-.timelines .timeline.current_timeline span.summary {
+/* .timelines .timeline.current_timeline span.summary {
     color: #ffffff;
-}
+} */
 
-.timelines {
+/* .timelines {
     position: relative;
     display: block;
-}
+} */
 
-/* 这是中间线的主要来源，怎么搞出来的？ */
-.timelines:before {
-    /* 可以把字去掉 */
-    content:"你好";
+/* 中间的竖线 */
+/* .timelines:before {
+    content:"";
     display: block;
     width: 2px;
     height: 100%;
-    /* background: #dddddd; */
-    background: red;
+    background: #dddddd;
     position: absolute;
     left: 50%;
-}
+} */
 
-/* 设置各个盒子的尺寸 */
 .timelines .timeline {
     box-sizing: border-box;
     width: 47%;
-    /* width: 80%; */
     margin-top: 45px;
 }
 
-
-/* 两个点变四个点？ 
-first-child 选定了第一个元素的上边的margin为零，自然导致了位移*/
-.timelines .timeline:first-child {
+/* .timelines .timeline:first-child {
     margin-top: 0;
-}
+} */
 
-
-
-/* 画了圆点 */
-.timelines .timeline:before {
+/* 圆点 */
+/* .timelines .timeline:before {
     content:"";
     position: absolute;
     width: 6px;
     height: 6px;
     border-radius: 6px;
     background: #bbbbbb;
-    border: 2px solid black;
+    border: 2px solid #ffffff;
     left: 50%;
     margin-left: -4px;
     margin-top: 6px;
-}
+} */
 
-.timelines .title {
+/* .timelines .title {
     position: relative;
     display: block;
-}
+} */
 
-/* 这是啥，不知道 */
-.timelines .title:before {
+/* 三角形 */
+/* .timelines .title:before {
     content:"";
-    border-top: 6px dashed red;
-    border-bottom: 6px solid red;
+    border-top: 6px dashed transparent;
+    border-bottom: 6px solid transparent;
     position: absolute;
-}
+} */
 
 .timelines .left_timeline {
     float: left;
-    clear: left;
+    /* clear: left; */
 }
 
-/* 左边的三角形
-.timelines .left_timeline .title:before {
+/* .timelines .left_timeline .title:before {
     border-left: 6px solid #eeeeee;
     right: -26px;
 } */
 
 .timelines .right_timeline {
     float: right;
-    clear: right;
+    /* clear: right; */
 }
 
-/* 右边的三角形
-    .timelines .right_timeline .title:before {
+/* .timelines .right_timeline .title:before {
     border-right: 6px solid #eee;
     left: -26px;
 } */
 
-.timelines .current_timeline.left_timeline .title:before, .timelines .current_timeline.right_timeline .title:before {
+/* .timelines .current_timeline.left_timeline .title:before, .timelines .current_timeline.right_timeline .title:before {
     border-left-color: #6e5cc1;
     border-right-color: #6e5cc1;
-}
+} */
 
-/* 紫色的点 */
 /* .timelines .current_timeline.left_timeline:before, .timelines .current_timeline.right_timeline:before {
     background: #6e5cc1;
 } */
 
 
-.fake:before {
-    /* 可以把字去掉 */
-    content:"";
-    /* display: block; */
-    width: 2px;
-    height: 10%;
-    /* background: #dddddd; */
-    background: red;
-    position: absolute;
-    left: 50%;
-}

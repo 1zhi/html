@@ -1,0 +1,42 @@
+body{
+    max-width: 960px;
+    margin: auto;
+}
+
+
+
+.timelines {
+    /* 这里没有达到预期效果的原因是 timeline 都 float了，所以已经不再属于普通流了 */
+    border: solid 1px black;
+
+    /* position:relative;
+    display: block; */
+}
+
+
+
+.timeline {
+    color: darkslategray;
+    border: black dashed 1px;
+    background: lightgrey;
+    padding: 20px;
+    margin-top: 45px;
+    width: 47%;
+    box-sizing: border-box;
+
+
+}
+
+.timeline.left {
+    float: left;
+    /* 可能不是完全想要的效果，需要调整clear为right */
+    /* clear: both; */
+
+}
+
+.timeline.right {
+    float: right;
+    /* 可能不是完全想要的效果，需要调整clear为left */
+    /* clear: both */
+}
+
