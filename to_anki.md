@@ -338,4 +338,7 @@ p标签是块级元素，span元素是行内元素。内元素可以写在块级
 
 ## 积累一些常用的颜色
 
-## overflow 的使用
+## 什么是overflow 和 块格式化上下文（Block Formatting Context，BFC）
+
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow
+https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context

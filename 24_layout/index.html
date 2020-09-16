@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>1zhi</title>
+    <link href="../style.css" type="text/css" rel="stylesheet" />
+    <style>
+        body {
+            margin: auto;
+            max-width: 960px;
+        }
+        .layout {
+            border: 1px dashed black;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+        .layout.header{
+            background: #fff;
+            height: 50px;
+            overflow: hidden;
+        }
+        .layout.left {
+            float: left;
+            width: 30%;
+            height: 500px;
+        }
+        .layout.right {
+            float: right;
+            width: 65%;
+            height: 500px;
+        }
+
+        .layout.footer {
+            clear: both;
+            height: 50px;
+        }
+
+        /* 为什么span没生效？ */
+        span{
+            text-align: center;
+        }
+   
+    </style>
+</head>
+
+<body>
+
+<div class= "header">
+    <h1>基本布局</h1>
+    <a href="../index.html" class="back">返回首页</a>
+</div>
+
+    
+<div class="layout header">
+<span>It is header</span>
+</div>
+
+<div class="layout left">
+    left part
+</div>
+
+<div class="layout right">
+    right part
+</div>
+
+<div class="layout footer">
+<span>It is footer</span>
+</div>
+
+</body>
+
+</html>
