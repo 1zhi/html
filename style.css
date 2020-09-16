@@ -6,8 +6,9 @@ body {
 
 
 /* 为什么不生效 */
-.pages{
-    border: 1px black solid;
+.part{
+    /* border: 1px black dashed; */
+    margin: 5px;
 
 }
 
@@ -22,7 +23,18 @@ body {
 
 }
 
+.example_unit {
+    border: grey dashed 1px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px;
+    /* 在box-sizing为border-box的情况下，width为百分比和固定的px的效果差异比较大 */
+    width: 20%;
+}
+
+
 /* 选择器不用加.，因为a是属性，不是类 */
+/* link是伪类还是伪元素？ */
 a:link{
     color: black;
     background-color: yellow;
@@ -31,6 +43,9 @@ a:link{
     border: 1px black dashed;
     margin: 10px;
     padding: 10px;
+    box-sizing: border-box;
+    /* 这里修改效果后的变化很大 */
+    display: inline-block;
 }
 
 a:visited {

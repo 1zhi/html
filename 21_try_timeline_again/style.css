@@ -29,6 +29,7 @@ body{
     width: 47%;
     /* 这里也很重要 */
     box-sizing: border-box;
+    border-radius: 6px;
 
 }
 
@@ -79,4 +80,34 @@ body{
     left: 50%;
     margin-left: -4px;
     margin-top: 6px;
+}
+
+.title:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 6px solid transparent;
+    position: absolute;
+    /* left: 200px;
+    top: 400px; */
+}
+
+/* 这里产生的变化和影响的原因是什么？ */
+.title {
+    position: relative;
+    display: block;
+}
+
+.timeline.left .title:before{
+    /* 这里为啥是负值，另外是相对谁的变化？ */
+    right: -33px;
+    border-left: 6px solid red;
+
+}
+
+.timeline.right .title:before{
+    /* 这里为啥是负值，另外是相对谁的变化？ */
+    left: -33px;
+    border-right: 6px solid red;
+
 }

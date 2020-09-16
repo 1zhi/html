@@ -90,38 +90,40 @@ body {
     margin-top: 6px;
 }
 
-/* .timelines .title {
+/* 这里和三角形的出现有非常重要的关系，原因不详 */
+.timelines .title {
     position: relative;
     display: block;
-} */
+}
 
 /* 三角形 */
-/* .timelines .title:before {
+.timelines .title:before {
     content:"";
     border-top: 6px dashed transparent;
     border-bottom: 6px solid transparent;
     position: absolute;
-} */
+}
 
 .timelines .left_timeline {
     float: left;
     /* clear: left; */
 }
 
-/* .timelines .left_timeline .title:before {
+.timelines .left_timeline .title:before {
     border-left: 6px solid #eeeeee;
     right: -26px;
-} */
+}
 
 .timelines .right_timeline {
     float: right;
     /* clear: right; */
 }
 
-/* .timelines .right_timeline .title:before {
-    border-right: 6px solid #eee;
+.timelines .right_timeline .title:before {
+    /* border-right: 6px solid #eee; */
+    border-right: 6px solid red;
     left: -26px;
-} */
+}
 
 /* .timelines .current_timeline.left_timeline .title:before, .timelines .current_timeline.right_timeline .title:before {
     border-left-color: #6e5cc1;
