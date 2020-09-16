@@ -11,10 +11,18 @@ body {
     height: 0;
 } */
 
+.timelines {
+    /* margin: 0 auto;
+    padding: 0; */
+    /* border: solid 1px black; */
+
+}
+
 /* .timelines {
-    margin: 0 auto;
-    padding: 0;
+    position: relative;
+    display: block;
 } */
+
 
 /* 这是什么，还没搞清楚 */
 /* .timelines:before, .timelines:after {
@@ -45,13 +53,10 @@ body {
     color: #ffffff;
 } */
 
-/* .timelines {
-    position: relative;
-    display: block;
-} */
+
 
 /* 中间的竖线 */
-/* .timelines:before {
+.timelines:before {
     content:"";
     display: block;
     width: 2px;
@@ -59,7 +64,7 @@ body {
     background: #dddddd;
     position: absolute;
     left: 50%;
-} */
+}
 
 .timelines .timeline {
     box-sizing: border-box;
@@ -67,12 +72,12 @@ body {
     margin-top: 45px;
 }
 
-/* .timelines .timeline:first-child {
+.timelines .timeline:first-child {
     margin-top: 0;
-} */
+}
 
 /* 圆点 */
-/* .timelines .timeline:before {
+.timelines .timeline:before {
     content:"";
     position: absolute;
     width: 6px;
@@ -83,7 +88,7 @@ body {
     left: 50%;
     margin-left: -4px;
     margin-top: 6px;
-} */
+}
 
 /* .timelines .title {
     position: relative;

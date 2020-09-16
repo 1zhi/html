@@ -1,14 +1,19 @@
 body{
     max-width: 960px;
-    margin: auto;
+    margin: 50px auto 100px auto;
 }
 
 
 
 .timelines {
     /* 这里没有达到预期效果的原因是 timeline 都 float了，所以已经不再属于普通流了 */
+    /* 建议后面把这里的框加上看一下布局的情况 */
     border: solid 1px black;
+    /* 为什么这里无效果 */
+    /* content: "nihao" */
 
+    /* 这两行加上之后，为什么中间的线就没有了 
+    因为如果在这里把这个框撑开后，中线在框内部*/
     /* position:relative;
     display: block; */
 }
@@ -18,19 +23,21 @@ body{
 .timeline {
     color: darkslategray;
     border: black dashed 1px;
-    background: lightgrey;
+    background: #eeeeee;
     padding: 20px;
     margin-top: 45px;
     width: 47%;
+    /* 这里也很重要 */
     box-sizing: border-box;
-
 
 }
 
 .timeline.left {
     float: left;
+    /* clear: right; */
     /* 可能不是完全想要的效果，需要调整clear为right */
     /* clear: both; */
+
 
 }
 
@@ -40,3 +47,36 @@ body{
     /* clear: both */
 }
 
+.timeline:first-child {
+    margin-top: 0px;
+}
+
+/* 这里如果增加文字为什么会把左边第一个边框避开？ */
+.timelines:before{
+    /* content: "hello"; */
+    content: "hello";
+    width: 2px;
+    height: 100%;
+    /* 不用border么？ */
+    /* border: 1px solid red; */
+    background: #dddddd;
+    /* display很关键 */
+    display: block;
+    /* 位置的统一使用 */
+    position: absolute;
+    left: 50%;
+}
+
+.timeline:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #bbbbbb;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    /* 如果不用absolute，出来的效果不是圆点，为什么 */
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: 6px;
+}
