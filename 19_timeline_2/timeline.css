@@ -1,0 +1,42 @@
+
+
+.timelines .timeline{
+    border: 1px solid black;
+    margin-top: 50px;
+    background-color: grey;
+}
+
+#a, #c{
+    float: left;
+    clear: left;
+}
+
+#b, #d{
+    float: right;
+    clear: right;
+}
+
+#a::before{
+    content: "";
+    background-color: red;
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    left: 50%;
+}
+
+/* 为何不生效 */
+#e::after{
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-left: 10px black solid;
+}
+
+/* 为何不生效 */
+#g::after{
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-left: 10px black solid;
+}
