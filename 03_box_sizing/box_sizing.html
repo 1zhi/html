@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>1zhi</title>
+        <link href='../style.css' type='text/css' rel='stylesheet'/>
         <!-- <link href='box_sizing.css' type='text/css' rel='stylesheet' /> -->
         <style>
-            div {
+            .box {
                 width: 500px;
                 height: 100px;
                 background-color: lime;
@@ -34,15 +35,18 @@
         </style>
     </head>
     <body>
-        <h1>Box sizing 解释</h1>
+        <div class='header'>
+            <h1>Box sizing 解释</h1>
+            <a href='../index.html' class='back'>返回首页</a>
+        </div>
 
         <p>无Padding的情况下，content-box的内部content的外边和border-box的border外边对齐</p>
-        <div class='content-box'>Content box</div>
-        <div class='border-box'>Border box</div>
+        <div class='content-box box'>Content box</div>
+        <div class='border-box box'>Border box</div>
 
         <p>有Padding的情况下，还要算上padding的部分，没有那么直观了</p>
-        <div class='content-box-2'>Content box with padding</div>
-        <div class='border-box-2'>Border box with padding</div>
+        <div class='content-box-2 box'>Content box with padding</div>
+        <div class='border-box-2 box'>Border box with padding</div>
 
     </body>
 </html>

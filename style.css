@@ -1,6 +1,24 @@
+
+body {
+    max-width: 960px;
+    margin: auto;
+}
+
+
 /* 为什么不生效 */
 .pages{
     border: 1px black solid;
+
+}
+
+.header{
+    background: #dddddd;
+}
+
+.back {
+    display: block;
+    /* box-sizing: border-box; */
+    float: right;
 
 }
 

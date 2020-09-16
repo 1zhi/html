@@ -1,8 +1,16 @@
 
 
-.head{
-    background-color: yellow;
+.header{
+    background: #dddddd;
 }
+
+.back {
+    display: block;
+    /* box-sizing: border-box; */
+    float: right;
+
+}
+
 
 .trangle_training{
     margin: 10px;
