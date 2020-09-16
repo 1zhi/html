@@ -20,4 +20,7 @@
 .unit {
     border: 1px dashed;
     margin-top: 5px;
+    /* 线框重复的位置的处理 */
+    overflow: hidden;
+
 }
