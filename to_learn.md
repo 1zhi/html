@@ -27,3 +27,6 @@ https://www.zhihu.com/question/31317160/answer/85833065
 
 * 参考[QuanDuan](https://www.quanduan.com/)做一个静态页面，托管到github
 
+## 后续的大前端学习实践安排
+
+https://www.freecodecamp.org/learn
