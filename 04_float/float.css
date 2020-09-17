@@ -45,3 +45,49 @@
     width: 40%;
     border: 1px solid black;
 }
+
+
+.clear {
+    clear: both;
+}
+
+/* .float_example {
+    border: black 1px dashed;
+} */
+
+.left_container {
+    float: left;
+    width: 60%;
+
+}
+
+.right_container {
+    float: right;
+    width: 40%;
+
+}
+
+.left_part {
+    border: red 1px dashed;
+    margin-right: 5px;
+    /* background: grey; */
+}
+
+.right_part {
+    margin-left: 5px;
+    border: yellowgreen 2px dashed;
+
+    /* background: yellow; */
+
+}
+
+.left_container.no_child{
+    border: red 1px dashed;
+
+}
+
+.right_container.no_child{
+    border: yellowgreen 2px dashed;
+
+}
+

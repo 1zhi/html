@@ -342,3 +342,5 @@ p标签是块级元素，span元素是行内元素。内元素可以写在块级
 
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow
 https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context
+
+overflow 文本内容时会使用hidden属性可以使背景色被填充完整

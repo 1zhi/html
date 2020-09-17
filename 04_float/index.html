@@ -17,6 +17,7 @@
   </div>
   
 
+<h2>float 基本概念</h2>
     <div class="timelines">
       <div class="timeline left_timeline current_timeline" id="a">
         a<br>
@@ -44,5 +45,39 @@
       </div>
 
       <div class="clear"></div>
+    
+    <h2>最佳实践</h2>
+      <p>在布局时应用float，建议先设置单独的元素，再在子元素中进行其他的设置，保证达到的效果。举例如下：</p>
+
+    <h3>父子元素配合的的float左右布局</h3>
+
+    <div class="float_example">
+
+      <div class="left_container">
+        <div class="left_part">
+          <p>左边</p>
+        </div>
+      </div>
+      <div class="right_container">
+        <div class="right_part">
+          <p>右边</p>
+        </div>
+      </div>
+        
+    </div>
+
+
+    <h3>单独的float左右布局</h3>
+    <p>容易出现错位的情况，导致排版的不顺利</p>
+
+    <div class="float_example">
+      <div class="left_container no_child">
+        左边
+      </div>
+      <div class="right_container no_child">
+        右边
+      </div>
+    </div>
+
 
     </div>

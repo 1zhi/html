@@ -1,0 +1,138 @@
+body {
+    max-width: 960px;
+    margin: 50px auto 100px auto;
+    font-family:"PT Sans", "HelveticaNeue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #fafafa;
+    /* background: black; */
+}
+
+/* .clear {
+    clear: both;
+    width: 0;
+    height: 0;
+} */
+
+.container .left_container {
+    float: left;
+    width: 60%;
+}
+
+.container .left_container .left {
+    border: 1px solid #666;
+    margin-right: 30px;
+}
+
+.container .right_container {
+    float: left;
+    width: 40%;
+}
+
+/* .container .left_body {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+.container .left_body .part_container {
+    float: left;
+    min-height: 300px;
+    box-sizing: border-box;
+    border-right: 1px solid red;
+}
+
+.container .left_body .part_3_container {
+    border-right: none;
+}
+
+.container .left_body .part_1_container {
+    width: 33.3%;
+}
+
+.container .left_body .part_2_container {
+    width: 33.3%;
+}
+
+.container .left_body .part_3_container {
+    width: 33.3%;
+} */
+
+.container .right {
+    border: 1px solid red;
+}
+
+.container .right .right_body {
+    min-height: 100px;
+    border-bottom: 1px solid green;
+}
+
+.container .right .right_tail {
+    min-height: 100px;
+    background: yellow;
+}
+
+.container .right .text_content {
+    overflow: hidden;
+}
+
+/* .part_1_container {
+    position: relative;
+}
+
+.part_1 {
+    font-size: 12px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.part_1 .caption {
+    padding-bottom: 3px;
+    border-bottom: 1px solid blue;
+    position: relative;
+}
+
+.part_1 .caption .title {
+    display: block;
+    padding-right: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.part_1 .caption .visits {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 8px;
+    background: red;
+    color: #fff;
+}
+
+.part_1 .description {
+    margin: 20px 0;
+}
+
+.part_1 .info {
+    border-top: 1px solid green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 5px;
+}
+
+.part_1 .info .date {
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.part_1 .info .date:before {
+    content:'date:';
+    color: #888;
+    margin-right: 3px;
+} */
