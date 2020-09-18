@@ -47,3 +47,53 @@ body {
     margin-right: 30px;
 
 }
+
+
+/* .left_head {
+    border-bottom: red 1px solid;
+} */
+
+.left_body {
+    border-bottom: grey 1px solid;
+    border-top: grey 1px solid;
+
+}
+
+/* .left_tail {
+    border-top: red 1px solid;
+} */
+
+.left_body_1 {
+    /* border-right: red 1px solid; */
+    border: red 1px solid;
+    /* border-top: green 1px solid; */
+    box-sizing: border-box;
+    width: 33.3%;
+    float: left;
+    min-height: 300px;
+}
+
+.left_body_2 {
+    border: yellow 5px solid;
+    width: 33.3%;
+    box-sizing: border-box;
+    float: left;
+    min-height: 300px;
+}
+
+.left_body_3 {
+    border: green 5px solid;
+    width: 33.3%;
+    box-sizing: border-box;
+    float: left;
+    min-height: 300px;
+    border-right: none;
+}
+
+
+/* clear 的作用是什么？为什么会出现边框的线条 */
+.clear {
+    clear: both;
+    width: 0;
+    height: 0;
+}
