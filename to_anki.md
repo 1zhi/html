@@ -160,3 +160,9 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/display
 https://www.runoob.com/html/html-links.html
 https://www.w3schools.com/cssref/sel_link.asp
 https://www.w3school.com.cn/css/css_link.asp
+
+## css 中 text-overflow 属性的作用？
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-overflow
+
+## css 中 white-space 的处理？
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/white-space
