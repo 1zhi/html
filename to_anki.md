@@ -69,9 +69,6 @@ W3C规范中没有document flow这个概念，只有normal-flow, 文档流的叫
 [writing-mode - CSS: Cascading Style Sheets | MDN](https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)
 
 
-
-
-
 ## vscode中如何快速给代码增加注释？
 
 [Mac vscode快捷键 - 笔记 - SegmentFault 思否](https://segmentfault.com/a/1190000012811886)
@@ -95,6 +92,17 @@ relative 不会移出文档流
 sticky 元素根据正常文档流进行定位，然后相对它的最近滚动祖先（nearest scrolling ancestor）和 containing block (最近块级祖先 nearest block-level ancestor)，包括table-related元素，基于top, right, bottom, 和 left的值进行偏移
 
 
+## css 中的 position 属性的 relative 和 absolute 为何总是成对存在？
+
+理解relative需要static作为比较，relative和static最大的区别在于static属于文档流中，relative 虽然在最终的位置上和文档流的绝对位置不同，但实际上还是在文档流中的，是相对于static 时的位置的偏移。（最后一点需要一点时间验证）
+
+absolute 的注意点在于首先移除文档流，第二个在于相对位置的判定上，常见的使用方法是有一个relative的父元素作为对比，方便做位置的调整与确定。
+
+更多的内容参见下方的链接：
+https://blog.csdn.net/weixin_40026101/article/details/80525871
+https://www.hotbak.net/key/absolute%E5%92%8Crelative%E7%9A%84%E5%BA%94%E7%94%A8.html
+https://www.zhangxinxu.com/wordpress/2010/12/css-%E7%9B%B8%E5%AF%B9%E7%BB%9D%E5%AF%B9relativeabsolute%E5%AE%9A%E4%BD%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/
+https://www.zhangxinxu.com/wordpress/2011/08/css%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8Drelative%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8Dabsolute%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89/
 
 ## 什么是祖先元素?
 
@@ -163,6 +171,10 @@ https://www.w3school.com.cn/css/css_link.asp
 
 ## css 中 text-overflow 属性的作用？
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-overflow
+
+## 为什么有时候 text-overflow 不生效？
+因为要配合使用
+
 
 ## css 中 white-space 的处理？
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/white-space

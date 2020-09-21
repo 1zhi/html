@@ -97,3 +97,26 @@ body {
     width: 0;
     height: 0;
 }
+
+.body_1.search {
+    border: 1px green solid;
+
+}
+
+
+/* 限制文字的展示格式 */
+.body_1 .search_text {
+    /* 为什么一定要做这样的限制？ */
+    /* display: block; */
+    /* 对空白的处理，nowrap会忽略换行？ */
+    white-space: nowrap;
+    /* 单独使用有可能达不到期望的效果，需要搭配overflow使用？ */
+    text-overflow: ellipsis;
+    overflow:hidden; 
+}
+
+
+.body_1.band {
+    border: 1px green solid;
+
+}
