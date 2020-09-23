@@ -71,6 +71,7 @@ body {
     width: 33.3%;
     float: left;
     min-height: 300px;
+    position: relative;
 }
 
 .left_body_2 {
@@ -100,6 +101,7 @@ body {
 
 .body_1.search {
     border: 1px green solid;
+    position: relative;
 
 }
 
@@ -107,16 +109,49 @@ body {
 /* 限制文字的展示格式 */
 .body_1 .search_text {
     /* 为什么一定要做这样的限制？ */
-    /* display: block; */
+    /* 如果是span是行内元素，就需要这样的限制了，才能让文字的忽略显示正常*/
+    display: block;
     /* 对空白的处理，nowrap会忽略换行？ */
     white-space: nowrap;
     /* 单独使用有可能达不到期望的效果，需要搭配overflow使用？ */
     text-overflow: ellipsis;
     overflow:hidden; 
+    padding-right: 40px;
+}
+
+.button {
+    background: red;
+    color: white;
+    position: absolute;
+    /* padding: 2px 8px; */
+    /* padding: 2px 8px; */
+
+    right: 0;
+    top: 0;
 }
 
 
 .body_1.band {
     border: 1px green solid;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 5px;
+}
 
+.body_1 .date:before {
+    content: "Date:";
+    color: lime;
+    margin-right: 3px;
+    /* padding: 5px; */
+
+}
+
+.body_1 .date {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    font-size: 10px;
 }
