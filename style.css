@@ -46,6 +46,7 @@ a:link{
     box-sizing: border-box;
     /* 这里修改效果后的变化很大 */
     display: inline-block;
+    text-decoration: none;
 }
 
 a:visited {

@@ -1,0 +1,36 @@
+body {
+    /* max-width: 960px; */
+    margin: auto;
+}
+
+
+.header {
+    background: black; 
+    width: 100%;
+    position: fixed;
+    height: 45px;
+    /* border: 1px red solid; */
+}
+
+.header .nav {
+    /* width: 100%; */
+    /* background: black; */
+    /* color: white; */
+    /* display: inline-block; */
+    /* width: 5%; */
+    /* float: inline-right; */
+    /* position: absolute; */
+    /* right: 0px; */
+    /* padding-right: 5%; */
+    text-align: right;
+    /* 含义是啥？ */
+    line-height: 45px;
+}
+
+.nav a {
+    color: white;
+    display: inline-bolck;
+    margin: 12px;
+    text-decoration: none;
+    /* right: 0px; */
+}

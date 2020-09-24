@@ -178,3 +178,11 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-overflow
 
 ## css 中 white-space 的处理？
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/white-space
+
+## line-height 如何使用？
+主要用于多行元素的空间量，例如多行文本的间距
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/line-height
+
+## text-decoration 用来做什么?
+文本的修饰线外观，比如超链接默认有下划线等等，可以去掉这些修饰
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration
