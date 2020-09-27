@@ -174,6 +174,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-overflow
 
 ## 为什么有时候 text-overflow 不生效？
 因为要配合使用
+https://blog.csdn.net/zhangchen124/article/details/79634842
 
 
 ## css 中 white-space 的处理？
@@ -186,3 +187,22 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/line-height
 ## text-decoration 用来做什么?
 文本的修饰线外观，比如超链接默认有下划线等等，可以去掉这些修饰
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-decoration
+
+## html 中 图片的标签和属性？
+
+<img src="xx.jpg" alt= "">
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+
+## html 中的属性值用单引号还是双引号？
+
+## background相关属性和使用
+如何能够在css中同时存在 background color 和 image
+
+https://juejin.im/post/6844904097733148686
+https://www.cnblogs.com/tianma3798/p/7905341.html
+
+## margin 的具体应用
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin
+
+## css  position 中 absolute 和 relative 的组合应用
