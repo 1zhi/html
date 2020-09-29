@@ -2,6 +2,7 @@ body {
     /* max-width: 960px; */
     margin: auto;
     background: #FFFBF5;
+    font-family: 'PT Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
 }
 
 
@@ -50,4 +51,64 @@ body {
     margin: 12px;
     text-decoration: none;
     /* right: 0px; */
+}
+
+.main {
+    max-width: 960px;
+    margin: auto;
+    position: relative;
+    border: 1px red solid;
+    top: 45%;
+}
+
+.main .left {
+    float: left;
+    /* clear: both; */
+    /* position: absolute; */
+    /* 没生效？ */
+    width: 40%;
+
+}
+
+.main .left :after {
+    content: "";
+    width: 2px;
+    /* 为什么高度用100%不显示？ */
+    /* height: 100%;  */
+    height: 100px;
+    /* border: yellow 2px solid; */
+    background: red;
+    /* 为什么一定要有position为absolute？ */
+    position: absolute;
+    right: 70%;
+
+}
+
+.main .right {
+    float: right;
+    /* clear: both; */
+    width: 60%;
+
+    /* position: absolute; */
+
+
+}
+
+.main .left .left_name{
+    /* font-size: 1.3em; */
+    /* color: red; */
+    font-size: 46px;
+
+}
+
+.main .right .right_name{
+    font-size: 1.3em;
+    /* color: red; */
+}
+
+.main .right .ref{
+    font-size: 1.3em;
+    /* color: red; */
+    text-align: right;
+    display: block;
 }
