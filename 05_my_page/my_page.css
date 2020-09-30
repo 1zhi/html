@@ -58,7 +58,8 @@ body {
     margin: auto;
     position: relative;
     border: 1px red solid;
-    top: 45%;
+    /* 为什么这里用百分数不生效？ */
+    top: 100px;
 }
 
 .main .left {
@@ -66,11 +67,11 @@ body {
     /* clear: both; */
     /* position: absolute; */
     /* 没生效？ */
-    width: 40%;
+    width: 30%;
 
 }
 
-.main .left :after {
+.main .left_content:after {
     content: "";
     width: 2px;
     /* 为什么高度用100%不显示？ */
@@ -81,29 +82,50 @@ body {
     /* 为什么一定要有position为absolute？ */
     position: absolute;
     right: 70%;
+    top: 30px;
 
 }
 
 .main .right {
     float: right;
     /* clear: both; */
-    width: 60%;
+    width: 65%;
+    /* 加了这个就错行了 */
+    border: 1px dotted red;
+
 
     /* position: absolute; */
 
 
 }
 
+.main .left .left_content{
+    padding-right: 20px;
+    border: 1px dotted red;
+
+}
+
 .main .left .left_name{
     /* font-size: 1.3em; */
     /* color: red; */
-    font-size: 46px;
+    font-size: 32px;
+    text-align: right;
+    border: 1px dotted red;
+
+
+}
+
+.main .left .left_sub{
+    text-align: right;
+    border: 1px dotted red;
 
 }
 
 .main .right .right_name{
     font-size: 1.3em;
     /* color: red; */
+    border: 1px dotted red;
+
 }
 
 .main .right .ref{
@@ -111,4 +133,28 @@ body {
     /* color: red; */
     text-align: right;
     display: block;
+    border: 1px dotted red;
+
+}
+
+.comment{
+    text-align: center;
+    /* display: inline-block; */
+    display: inline-block;
+
+    /* position: absolute; */
+    clear: both;
+    /* top: 50%; */
+    /* right: 40%; */
+    font-size: 20px;
+
+    border: 1px dotted red;
+}
+
+#div_comment{
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    margin: 10px;
+    padding: 20px;
 }
